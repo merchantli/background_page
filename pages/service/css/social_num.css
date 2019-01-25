@@ -1,0 +1,13 @@
+.middle_num{
+    display: inline-block;
+    width: 200px;
+    text-align: center;
+}
+.enter{
+    float: right;
+    margin-left: 10px;
+}
+.enter:hover{
+    color: red;
+    cursor: pointer;
+}

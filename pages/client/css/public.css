@@ -1,0 +1,8 @@
+.enter{
+    float: right;
+    margin-left: 10px;
+}
+.enter:hover{
+    color: red;
+    cursor: pointer;
+}

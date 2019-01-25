@@ -1,0 +1,10 @@
+.banner{
+    width: 40px;
+    height: 40px;
+}
+.content .box-header{
+    display: flex;
+}
+.content .box-header h3{
+    line-height: 34px;
+}
