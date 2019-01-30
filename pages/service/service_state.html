@@ -21,7 +21,8 @@
     <link rel="stylesheet" href="../../dist/css/skins/_all-skins.min.css">
     <!-- 开关样式 -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-switch/3.3.2/css/bootstrap3/bootstrap-switch.min.css" rel="stylesheet">
-
+    <!-- 自定义样式 -->
+    <link rel="stylesheet" href="./css/social_num.css">
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -53,7 +54,17 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </a>
-
+            <!-- 自定义样式放在service目录下css样式里的social_num.css里 -->
+            <form class="bs-example bs-example-form inline-box" role="form" style="width: 300px;">
+                <div class="input-group">
+                    <input type="text" class="form-control" placeholder="搜索用户名、单号">
+                    <span class="input-group-btn">
+                        <button class="btn btn-default" type="button">
+                            搜索
+                        </button>
+                    </span>
+                </div><!-- /input-group -->
+            </form>
             <div class="navbar-custom-menu">
                 <ul class="nav navbar-nav">
                     <!-- Messages: style can be found in dropdown.less-->
@@ -491,7 +502,7 @@
         <!-- Content Header (Page header) -->
         <section class="content-header">
             <h1>
-                你可以在本页开启、关闭或增加、删除一项服务
+                你可以在本页开启或关闭一项服务
             </h1>
             <ol class="breadcrumb">
                 <li><a href="#"><i class="fa fa-dashboard"></i>服务管理</a></li>
@@ -506,7 +517,7 @@
                     <div class="box">
                         <div class="box-header">
                             <h3 class="box-title">服务项目</h3>
-                            <button type="button" class="btn btn-info" style="margin-right: 10px;"> 添加 </button>
+                            <button type="button" class="btn btn-info" style="margin-left: 15px;"> 添加 </button>
                         </div>
                         <!-- /.box-header -->
                         <div class="box-body">
@@ -516,7 +527,6 @@
                                     <th>#</th>
                                     <th>服务名称</th>
                                     <th>开关</th>
-                                    <th>操作</th>
                                 </tr>
                                 </thead>
                                 <tbody>
@@ -524,109 +534,61 @@
                                     <td>01</td>
                                     <th>社保服务</th>
                                     <th><input type="checkbox" checked class="checkbox"/>  </th>
-                                    <th>
-                                        <button type="button" class="btn btn-info" style="margin-right: 10px;"> 修改 </button>
-                                        <button type="button" class="btn btn-danger"> 删除 </button>
-                                    </th>
                                 </tr>
                                 <tr>
                                     <td>02</td>
                                     <th>公积金服务</th>
                                     <th><input type="checkbox" checked class="checkbox"/>  </th>
-                                    <th>
-                                        <button type="button" class="btn btn-info" style="margin-right: 10px;"> 修改 </button>
-                                        <button type="button" class="btn btn-danger"> 删除 </button>
-                                    </th>
                                 </tr>
                                 <tr>
                                     <td>03</td>
                                     <th>社保转移</th>
                                     <th><input type="checkbox" checked class="checkbox"/>  </th>
-                                    <th>
-                                        <button type="button" class="btn btn-info" style="margin-right: 10px;"> 修改 </button>
-                                        <button type="button" class="btn btn-danger"> 删除 </button>
-                                    </th>
                                 </tr>
                                 <tr>
                                     <td>04</td>
                                     <th>生育津贴</th>
                                     <th><input type="checkbox" checked class="checkbox"/>  </th>
-                                    <th>
-                                        <button type="button" class="btn btn-info" style="margin-right: 10px;"> 修改 </button>
-                                        <button type="button" class="btn btn-danger"> 删除 </button>
-                                    </th>
                                 </tr>
                                 <tr>
                                     <td>05</td>
                                     <th>生检报销</th>
                                     <th><input type="checkbox" checked class="checkbox"/>  </th>
-                                    <th>
-                                        <button type="button" class="btn btn-info" style="margin-right: 10px;"> 修改 </button>
-                                        <button type="button" class="btn btn-danger"> 删除 </button>
-                                    </th>
                                 </tr>
                                 <tr>
                                     <td>06</td>
                                     <th>生育住院报销</th>
                                     <th><input type="checkbox" checked class="checkbox"/>  </th>
-                                    <th>
-                                        <button type="button" class="btn btn-info" style="margin-right: 10px;"> 修改 </button>
-                                        <button type="button" class="btn btn-danger"> 删除 </button>
-                                    </th>
                                 </tr>
                                 <tr>
                                     <td>07</td>
                                     <th>社保姓名变更</th>
                                     <th><input type="checkbox" checked class="checkbox"/>  </th>
-                                    <th>
-                                        <button type="button" class="btn btn-info" style="margin-right: 10px;"> 修改 </button>
-                                        <button type="button" class="btn btn-danger"> 删除 </button>
-                                    </th>
                                 </tr>
                                 <tr>
                                     <td>08</td>
                                     <th>社保身份证变更</th>
                                     <th><input type="checkbox" checked class="checkbox"/>  </th>
-                                    <th>
-                                        <button type="button" class="btn btn-info" style="margin-right: 10px;"> 修改 </button>
-                                        <button type="button" class="btn btn-danger"> 删除 </button>
-                                    </th>
                                 </tr>
                                 <tr>
                                     <td>09</td>
                                     <th>社保卡信息二次采集</th>
                                     <th><input type="checkbox" checked class="checkbox"/>  </th>
-                                    <th>
-                                        <button type="button" class="btn btn-info" style="margin-right: 10px;"> 修改 </button>
-                                        <button type="button" class="btn btn-danger"> 删除 </button>
-                                    </th>
                                 </tr>
                                 <tr>
                                     <td>10</td>
                                     <th>社保户口性质变更</th>
                                     <th><input type="checkbox" checked class="checkbox"/>  </th>
-                                    <th>
-                                        <button type="button" class="btn btn-info" style="margin-right: 10px;"> 修改 </button>
-                                        <button type="button" class="btn btn-danger"> 删除 </button>
-                                    </th>
                                 </tr>
                                 <tr>
                                     <td>11</td>
-                                    <th>社保补缴</th>
+                                    <th>社保户口性质变更</th>
                                     <th><input type="checkbox" checked class="checkbox"/>  </th>
-                                    <th>
-                                        <button type="button" class="btn btn-info" style="margin-right: 10px;"> 修改 </button>
-                                        <button type="button" class="btn btn-danger"> 删除 </button>
-                                    </th>
                                 </tr>
                                 <tr>
                                     <td>12</td>
-                                    <th>残保金</th>
+                                    <th>社保户口性质变更</th>
                                     <th><input type="checkbox" checked class="checkbox"/>  </th>
-                                    <th>
-                                        <button type="button" class="btn btn-info" style="margin-right: 10px;"> 修改 </button>
-                                        <button type="button" class="btn btn-danger"> 删除 </button>
-                                    </th>
                                 </tr>
                                 </tbody>
                             </table>

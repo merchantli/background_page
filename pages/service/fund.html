@@ -18,8 +18,10 @@
     <!-- AdminLTE Skins. Choose a skin from the css/skins
          folder instead of downloading all of them to reduce the load. -->
     <link rel="stylesheet" href="../../dist/css/skins/_all-skins.min.css">
-    <!-- 轮播图里的图片大小 -->
-    <link rel="stylesheet" href="./css/banner.css">
+    <!-- DataTables -->
+    <link rel="stylesheet" href="../../bower_components/datatables.net-bs/css/dataTables.bootstrap.min.css">
+    <!-- 引入自定义样式 在service文件夹下css文件夹里的social_num.css中修改 -->
+    <link rel="stylesheet" href="./css/social_num.css">
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -54,7 +56,6 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </a>
-
             <div class="navbar-custom-menu">
                 <ul class="nav navbar-nav">
                     <!-- Messages: style can be found in dropdown.less-->
@@ -492,7 +493,9 @@
     <div class="content-wrapper">
         <section class="content-header">
             <h1>
-                公积金基数配置
+                公积金基数管理
+                <button style="margin-left: 15px;" class="btn btn-info">添加</button>
+                <button style="margin-left: 15px;" class="btn btn-info">批量上传基数信息</button>
             </h1>
             <ol class="breadcrumb">
                 <li><a href="#"><i class="fa fa-dashboard"></i> 服务管理</a></li>
@@ -502,34 +505,82 @@
         <!-- 主要内容 -->
         <section class="content">
             <div class="row">
-                <!-- 公积金基数管理 -->
-                <div class="col-md-3">
-                    <!-- Profile Image -->
-                    <div class="box box-primary">
-                        <div class="box-body box-profile">
-                            <h2>公积金</h2>
-                            <p class="text-muted text-center">基数配置</p>
+                <div class="col-xs-12">
+                    <div class="box">
+                        <div class="box-header">
+                            <h3 class="box-title">详情</h3>
+                        </div>
+                        <!-- /.box-header -->
+                        <div class="box-body">
+                            <table id="example1" class="table table-hover table-bordered table-striped">
+                                <thead>
+                                <tr>
+                                    <th>城市</th>
+                                    <th>基数上限</th>
+                                    <th>基数下限</th>
+                                    <th>公积金个人占比</th>
+                                    <th>公积金企业占比</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                <tr>
+                                    <td>
+                                        上海
+                                        <i class="fa fa-trash-o enter"></i>
+                                        <i class="fa fa-edit enter"></i>
+                                    </td>
+                                    <td>3387</td>
+                                    <td>25401</td>
+                                    <td>0.08</td>
+                                    <td>0.2</td>
 
-                            <ul class="list-group list-group-unbordered">
-                                <li class="list-group-item">
-                                    <b>企业缴纳</b> <b class="middle_num">12</b> <a class="pull-right">%</a>
-                                </li>
-                                <li class="list-group-item">
-                                    <b>个人缴纳</b> <b class="middle_num">12</b> <a class="pull-right">%</a>
-                                </li>
-                            </ul>
-                            <a href="#" class="btn btn-danger"><b>删除</b></a>
-                            <a style="margin-left: 160px;" href="#" class="btn btn-primary"><b>修改</b></a>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        广州
+                                        <i class="fa fa-trash-o enter"></i>
+                                        <i class="fa fa-edit enter"></i>
+                                    </td>
+                                    <td>3387</td>
+                                    <td>25401</td>
+                                    <td>0.08</td>
+                                    <td>0.2</td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        深圳
+                                        <i class="fa fa-trash-o enter"></i>
+                                        <i class="fa fa-edit enter"></i>
+                                    </td>
+                                    <td>3387</td>
+                                    <td>25401</td>
+                                    <td>0.08</td>
+                                    <td>0.2</td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        大连
+                                        <i class="fa fa-trash-o enter"></i>
+                                        <i class="fa fa-edit enter"></i>
+                                    </td>
+                                    <td>3387</td>
+                                    <td>25401</td>
+                                    <td>0.08</td>
+                                    <td>0.2</td>
+                                </tr>
+                                </tbody>
+                            </table>
                         </div>
                         <!-- /.box-body -->
                     </div>
                     <!-- /.box -->
                 </div>
+                <!-- /.col -->
             </div>
+            <!-- /.row -->
         </section>
     </div>
     <!-- 除头部横幅和左侧导航栏外主要内容区域结束 -->
-
     <!-- 网页最底部内容 -->
     <footer class="main-footer">
         <strong> Version 2.4.0</strong>
@@ -738,6 +789,9 @@
 <script src="../../bower_components/jquery/dist/jquery.min.js"></script>
 <!-- Bootstrap 3.3.7 -->
 <script src="../../bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+<!-- DataTables -->
+<script src="../../bower_components/datatables.net/js/jquery.dataTables.min.js"></script>
+<script src="../../bower_components/datatables.net-bs/js/dataTables.bootstrap.min.js"></script>
 <!-- SlimScroll -->
 <script src="../../bower_components/jquery-slimscroll/jquery.slimscroll.min.js"></script>
 <!-- FastClick -->

@@ -11,3 +11,10 @@
     color: red;
     cursor: pointer;
 }
+.inline-box{
+    position: absolute;
+    top: 8px;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
