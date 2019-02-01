@@ -1,7 +1,9 @@
 const userr = document.querySelectorAll('.u_ser');
 const pover = document.querySelector('.popoverr');
-const closee = document.querySelector('.closee');
 const acquire = document.querySelector('.acquire');
+const close_btn = document.querySelector('.top_close');
+console.log(close_btn);
+console.log(close_btn);
 let allHtml = '',
     printHtml = '',
     printStart = '',
@@ -11,7 +13,7 @@ userr.forEach((item,index)=>{
         e.stopPropagation();
         pover.style.display = 'block';
     });
-    closee.addEventListener('click',function (e) {
+    close_btn.addEventListener('click',function (e) {
         e.stopPropagation();
         pover.style.display = 'none';
     });

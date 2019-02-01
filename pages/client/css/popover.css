@@ -12,6 +12,7 @@
 .p_con{
     position: absolute;
     width: 60%;
+    min-width: 913px;
     height: auto;
     padding: 15px;
     max-height: 80%;
@@ -35,6 +36,17 @@
     margin: 0;
     background-color: white;
 }
+/*------------关闭按钮样式开始-----------------*/
+.close_button{
+    position: fixed;
+    width: 60px;
+    height: 40px;
+    top: 0;
+    right: 5px;
+    line-height: 40px;
+    cursor: pointer;
+}
+/*------------关闭按钮样式结束-----------------*/
 /*--------------客户详细信息样式--------------------------*/
 .client_message{
     display: flex;
