@@ -41,8 +41,8 @@
     position: fixed;
     width: 60px;
     height: 40px;
-    top: 0;
-    right: 5px;
+    top: 40px;
+    right: 100px;
     line-height: 40px;
     cursor: pointer;
 }
@@ -70,6 +70,7 @@
     height: 100%;
     top: 0;
     left: 0;
+    border-right: 1px solid #ccc;
     text-align: center;
 }
 .datum p{
@@ -97,6 +98,8 @@
     top: 0;
     right: 0;
     box-sizing: border-box;
+    border-top: 1px solid #ccc;
+    border-right: 1px solid #ccc;
 }
 .client_message .in_fo .row_one{
     border-bottom: 1px solid #CCCCCC;

@@ -131,6 +131,18 @@
 .client_message .in_fo .row_five:hover{
     background-color: rgb(245,245,245);
 }
+.client_message .in_fo .row_six{
+    border-bottom: 1px solid #CCCCCC;
+}
+.client_message .in_fo .row_six:hover{
+    background-color: rgb(245,245,245);
+}
+.client_message .in_fo .row_seven{
+    border-bottom: 1px solid #CCCCCC;
+}
+.client_message .in_fo .row_seven:hover{
+    background-color: rgb(245,245,245);
+}
 .client_message .in_fo div{
     flex: 1;
     display: flex;
