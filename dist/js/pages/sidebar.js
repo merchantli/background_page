@@ -1,9 +1,21 @@
 $('.main-sidebar').mouseenter(function () {
-    console.log(1);
     $('body').removeClass('sidebar-collapse');
     $('body').addClass('sidebar-expanded-on-hover');
 });
 $('.main-sidebar').mouseleave(function () {
     $('body').removeClass('sidebar-expanded-on-hover');
     $('body').addClass('sidebar-collapse');
+});
+let in_to = document.querySelectorAll('.into'),
+    conceal_o = document.querySelectorAll('.conceal_o'),
+    conceal_t = document.querySelectorAll('.conceal_t');
+in_to.forEach(function (item,index) {
+   item.onmouseenter = function () {
+      conceal_o[index].style.display = 'block';
+      conceal_t[index].style.display = 'block';
+   } ;
+   item.onmouseleave = function () {
+       conceal_o[index].style.display = 'none';
+       conceal_t[index].style.display = 'none';
+   }
 });
