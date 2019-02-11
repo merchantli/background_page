@@ -10,17 +10,74 @@ let allHtml = '',
     printHtml = '',
     printStart = '',
     printEnd = '';
+//接口 用户id：id 服务项目：belong_service 姓名：client 城市：sb_city 订单时间：sb_date 金额：sb_fees 手续费：handling_fees
+//折扣金额：discount_fees 付款：real_fees 来源：remarks 订单状态：bill_status 支付方式：pay_way 订单编号：order_no
+//网页 用户id：user_ID 姓名client_name 用户来源user_origin 城市user_city 服务内容user_service 订单状态order_status
+//订单编号order_num 订单日期order_date 手机号码user_phone 金额order_fees 手续费handling_fees 折扣金额discount_fees
+//付款金额user_pay 付款方式payment_way
 orders_1.forEach((item,index)=>{
     item.addEventListener('click',function (e) {
         e = e || window.event;
         e.stopPropagation();
         popover_1.style.display = 'block';
+        //发起ajax
+        // $.get({
+        //     url:'http://47.107.72.6:8000/background/get_social_bill_detail/<订单id>/',
+        //     callback:function (data) {
+        //         let new_data = JSON.parse(data);
+        //         for(var key in new_data){
+        //             switch (key) {
+        //                 case 'client':
+        //                     $('#client_name').text(new_data[key]);
+        //                     break;
+        //                 case 'sb_city':
+        //                     $('#user_city').text(new_data[key]);
+        //                     break;
+        //                 case 'id':
+        //                     $('#user_ID').text(new_data[key]);
+        //                     break;
+        //                 case 'belong_service':
+        //                     $('#user_service').text(new_data[key]);
+        //                     break;
+        //                 case 'sb_date':
+        //                     $('#order_date').text(new_data[key]);
+        //                     break;
+        //                 case 'sb_fees':
+        //                     $('#order_fees').text(new_data[key]);
+        //                     break;
+        //                 case 'handling_fees':
+        //                     $('#handling_fees').text(new_data[key]);
+        //                     break;
+        //                 case 'discount_fees':
+        //                     $('#discount_fees').text(new_data[key]);
+        //                     break;
+        //                 case 'real_fees':
+        //                     $('#user_pay').text(new_data[key]);
+        //                     break;
+        //                 case 'remarks':
+        //                     $('#user_origin').text(new_data[key]);
+        //                     break;
+        //                 case 'bill_status':
+        //                     $('#order_status').text(new_data[key]);
+        //                     break;
+        //                 case 'pay_way':
+        //                     $('#payment_way').text(new_data[key]);
+        //                     break;
+        //                 default:
+        //                     ''
+        //                     break;
+        //             }
+        //         }
+        //     },
+        //     type:'json'
+        // });
     });
     close_btn_t.addEventListener('click',function (e) {
         e.stopPropagation();
         popover_1.style.display = 'none';
     });
 });
+$('#user_name').text('男');
 orders.forEach( (item,index)=>{
     item.addEventListener('click',function (e) {
         e = e || window.event;
@@ -40,10 +97,12 @@ orders.forEach( (item,index)=>{
         //                     $('#user_name').text(new_data[key]);
         //                     break;
         //                 case 'sex':
+
+
         //                      if(new_data[key] = 1){
-        //                          $('#gender').text(男);
+        //                          $('#gender').text('男');
         //                      }else{
-        //                          $('#gender').text(女);
+        //                          $('#gender').text('女');
         //                      }
         //
         //                     break;
@@ -55,9 +114,9 @@ orders.forEach( (item,index)=>{
         //                     break;
         //                 case 'account_property':
         //                      if(new_data[key]='county'){
-        //                          $('#account_property').text(城市户口);
+        //                          $('#account_property').text('城市户口');
         //                      }else{
-        //                          $('#account_property').text(农村户口);
+        //                          $('#account_property').text('农村户口');
         //                      }
         //
         //                     break;
