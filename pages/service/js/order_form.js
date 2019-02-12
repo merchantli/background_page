@@ -68,8 +68,7 @@ orders_1.forEach((item,index)=>{
         //                     break;
         //             }
         //         }
-        //     },
-        //     type:'json'
+        //     }
         // });
     });
     close_btn_t.addEventListener('click',function (e) {
@@ -97,14 +96,11 @@ orders.forEach( (item,index)=>{
         //                     $('#user_name').text(new_data[key]);
         //                     break;
         //                 case 'sex':
-
-
         //                      if(new_data[key] = 1){
         //                          $('#gender').text('男');
         //                      }else{
         //                          $('#gender').text('女');
         //                      }
-        //
         //                     break;
         //                 case 'province':
         //                     $('#province').text(new_data[key]);
@@ -146,8 +142,7 @@ orders.forEach( (item,index)=>{
         //                     break;
         //             }
         //         }
-        //     },
-        //     type : 'json'
+        //     }
         // });
     });
     close_btn1.addEventListener('click',function (e) {

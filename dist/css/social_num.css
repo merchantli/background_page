@@ -2,6 +2,9 @@
 #example1{
     overflow-y: auto;
 }
+.left_line{
+    border-right: 1px solid #ccc !important;
+}
 /*原fund_bill.css里的内容结束*/
 /*原popover.css里的内容*/
 .popoverr{
