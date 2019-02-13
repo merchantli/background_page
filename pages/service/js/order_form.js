@@ -76,7 +76,6 @@ orders_1.forEach((item,index)=>{
         popover_1.style.display = 'none';
     });
 });
-$('#user_name').text('男');
 orders.forEach( (item,index)=>{
     item.addEventListener('click',function (e) {
         e = e || window.event;

@@ -113,44 +113,29 @@
 .popoverr .client_message .in_fo .row_one{
     border-bottom: 1px solid #CCCCCC;
 }
-.popoverr .client_message .in_fo .row_one:hover{
+.popoverr .client_message .in_fo .previous:hover{
+    background-color: rgb(245,245,245);
+}
+.popoverr .client_message .in_fo .behind:hover{
     background-color: rgb(245,245,245);
 }
 .popoverr .client_message .in_fo .row_two{
     border-bottom: 1px solid #CCCCCC;
 }
-.popoverr .client_message .in_fo .row_two:hover{
-    background-color: rgb(245,245,245);
-}
 .popoverr .client_message .in_fo .row_three{
     border-bottom: 1px solid #CCCCCC;
-}
-.popoverr .client_message .in_fo .row_three:hover{
-    background-color: rgb(245,245,245);
 }
 .popoverr .client_message .in_fo .row_four{
     border-bottom: 1px solid #CCCCCC;
 }
-.popoverr .client_message .in_fo .row_four:hover{
-    background-color: rgb(245,245,245);
-}
 .popoverr .client_message .in_fo .row_five{
     border-bottom: 1px solid #CCCCCC;
-}
-.popoverr .client_message .in_fo .row_five:hover{
-    background-color: rgb(245,245,245);
 }
 .popoverr .client_message .in_fo .row_six{
     border-bottom: 1px solid #CCCCCC;
 }
-.popoverr .client_message .in_fo .row_six:hover{
-    background-color: rgb(245,245,245);
-}
 .popoverr .client_message .in_fo .row_seven{
     border-bottom: 1px solid #CCCCCC;
-}
-.popoverr .client_message .in_fo .row_seven:hover{
-    background-color: rgb(245,245,245);
 }
 .popoverr .client_message .in_fo div{
     flex: 1;
@@ -325,44 +310,29 @@
 .popover_1 .client_message .in_fo .row_one{
     border-bottom: 1px solid #CCCCCC;
 }
-.popover_1 .client_message .in_fo .row_one:hover{
+.popover_1 .client_message .in_fo .previous:hover{
+    background-color: rgb(245,245,245);
+}
+.popover_1 .client_message .in_fo .behind:hover{
     background-color: rgb(245,245,245);
 }
 .popover_1 .client_message .in_fo .row_two{
     border-bottom: 1px solid #CCCCCC;
 }
-.popover_1 .client_message .in_fo .row_two:hover{
-    background-color: rgb(245,245,245);
-}
 .popover_1 .client_message .in_fo .row_three{
     border-bottom: 1px solid #CCCCCC;
-}
-.popover_1 .client_message .in_fo .row_three:hover{
-    background-color: rgb(245,245,245);
 }
 .popover_1 .client_message .in_fo .row_four{
     border-bottom: 1px solid #CCCCCC;
 }
-.popover_1 .client_message .in_fo .row_four:hover{
-    background-color: rgb(245,245,245);
-}
 .popover_1 .client_message .in_fo .row_five{
     border-bottom: 1px solid #CCCCCC;
-}
-.popover_1 .client_message .in_fo .row_five:hover{
-    background-color: rgb(245,245,245);
 }
 .popover_1 .client_message .in_fo .row_six{
     border-bottom: 1px solid #CCCCCC;
 }
-.popover_1 .client_message .in_fo .row_six:hover{
-    background-color: rgb(245,245,245);
-}
 .popover_1 .client_message .in_fo .row_seven{
     border-bottom: 1px solid #CCCCCC;
-}
-.popover_1 .client_message .in_fo .row_seven:hover{
-    background-color: rgb(245,245,245);
 }
 .popover_1 .client_message .in_fo div{
     flex: 1;
