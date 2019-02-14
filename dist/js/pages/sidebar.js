@@ -1,9 +1,7 @@
 $('.main-sidebar').mouseenter(function () {
     $('body').removeClass('sidebar-collapse');
-    $('body').addClass('sidebar-expanded-on-hover');
 });
 $('.main-sidebar').mouseleave(function () {
-    $('body').removeClass('sidebar-expanded-on-hover');
     $('body').addClass('sidebar-collapse');
 });
 let in_to = document.querySelectorAll('.into'),

@@ -16,8 +16,7 @@ userr.forEach((item,index)=>{
         //     url:"http://47.107.72.6:8000/background/get_social_bill_detail/订单编号/",
         //     callback : function (data) {
         //         console.log(data);
-        //     },
-        //     type : 'json'
+        //     }
         // });
     });
     close_btn.addEventListener('click',function (e) {
